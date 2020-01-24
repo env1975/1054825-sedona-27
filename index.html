@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+  <script src="https://kit.fontawesome.com/c05da54bd3.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    
     <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Мой первый проект HTML5">
+    <meta name="author" content="Евгений Воронов на основании курса HTML-академии">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="img/logo.svg" width="111" height="24" alt="Логотип города Седона">
+        </a>
+        <ul>
+          <li><a href="info.html">Информация</a></li><!--пункт «Информация» не является ссылкой на главную страницу-->
+          <li><a href="gallery.html">Фото и видео</a></li><!--Позже определится где и в каком виде хранится фото-видео галлерея-->
+          <li><a href="map.html">Карта штата</a></li><!--Позже определится где и в каком виде хранится карта штата-->
+          <li><a href="hotels.html">Гостиницы</a></li><!--Позже определится где и в каком виде хранится галлерея гостиниц-->
+        </ul>
+      </nav>
+    </header> 
+
+    <main>
+      <section class="upper-background-image"><!--Бэкграунд-фото прописать через CSS, указав адрес картинки-->
+        <h3>WELLCOME</h3>
+        <span>-to the gorgeous-</span>
+          <h1>SEDONA</h1>
+          <p>"Because the Grand Canyon sucks!"</p>
+      </section>
+    
+    <div>
+      <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+
+    <section>
+      <!--Здесь будет центральный блок страницы:
+       (настоящий городок, жильё, еда и т.д.)
+        который на данном этапе выделен красным цветом в задании,
+      а соответственно, не верстается в этом занятии.-->
+    </section>
+
+    <div>
+      <p>Заинтересовались?</p>
+      <p>Укажите предполагаемые даты поездки,<br>
+        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    </div>
+
+    <section><!--Это модальное окно - блок бронирования гостиниц в Седоне-->
+      <h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3><!--Заголовок блока бронирования-->
+      <span><a class="calendar" href="">Иконка календаря</a></span>
+      <span>Дата заезда</span>
+      <span>Дата выезда</span>
+      <span>Взрослые</span>
+      <span>Дети</span>
+
+      <form> <!--Кнопка "НАЙТИ"-->
+        <input type="text" placeholder="НАЙТИ">
+        <button type="submit"></button>
+      </form>
+    </section>
+
+    </main>
+
+    <footer><!--На всех страницах футер идентичен-->
+      <p>
+        #visitSEDONA
+      </p>
+      <div>
+        <ul>
+          <li><a href="#">Твиттер</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Ю-тьюб</a></li>
+        </ul>
+      </div>
+
+      <p>
+        Website by: <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-HTMLacademy.svg" width="111" height="24" alt="Логотип HTML-академии">
+        </a>
+      </p>
+    </footer>
 
   </body>
 </html>
+
+    
+   
