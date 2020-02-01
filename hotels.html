@@ -28,13 +28,114 @@
     </header>
 <main>
   <section>
-    <!--Здесь будет центральный блок страницы:
-     модальное окно (инфраструктура, тип жилья, стоимость и т.д.)
-      который на данном этапе выделен красным цветом в задании,
-    а соответственно, не верстается в этом занятии.-->
+    <div class="sort-background">   
+      <h1 class="visually-hiden">Гостиницы</h1>
+      
+      <form action="https://echo.htmlacademy.ru" method="post" class="form-container">
+      <div class="infrastructure">
+      <span>Инфраструктура:</span>
+      <p class="checkbox-container">
+      <label for="pool">Бассейн
+      <input type="checkbox" name="check-pool" id="pool" class="visually-hiden">
+      <span class="checkbox-indicator"></span>
+      </label>
+      </p>
+      
+      <p class="checkbox-container">
+      <label for="parking">Парковка
+      <input type="checkbox" name="check-parking" class="visually-hiden" id="parking">
+      <span class="checkbox-indicator"></span>
+      </label>
+      </p>
+      
+      <p class="checkbox-container">
+      <label for="wifi">Wi-fi
+      <input type="checkbox" name="check-wifi" class="visually-hiden" id="wifi">
+      <span class="checkbox-indicator"></span>
+      </label>
+      </p>
+      </div>
+      
+      <div class="type-of-house">
+      <span>Тип жилья:</span>
+      <p class="checkbox-container">
+      <label for="hotel">Гостиница
+      <input type="checkbox" name="check-hotel" class="visually-hiden" id="hotel" disabled checked>
+      <span class="checkbox-indicator"></span>
+      </label>
+      </p>
+      
+      <p class="checkbox-container">
+      <label for="motel">Мотель
+      <input type="checkbox" name="check-motel" class="visually-hiden" id="motel" checked>
+      <span class="checkbox-indicator"></span>
+      </label>
+      </p>
+      
+      <p class="checkbox-container">
+      <label for="apartments">Апартаменты
+      <input type="checkbox" name="check-apartments" class="visually-hiden" id="apartments">
+      <span class="checkbox-indicator"></span>
+      </label>
+      </p>
+      </div>
+      
+      <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+      <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+      <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      
+      <div class="range-controls">
+      <div class="scale">
+      <div class="bar"></div>
+      
+      </div>
+      
+      <div class="range-toggle range-toggle-min"></div>
+      <div class="range-toggle range-toggle-max"></div>
+      
+      </div>
+      
+      <button class="button-transparent" type="submit">Показать</button>
+      
+      </div>
+      </form>
+      </div>
+      
+      <div class="sort-of">
+      <span>Найдено: 3</span>
+      <ul class="sort-of-main">
+      <li>Сортировка:</li>
+      <li><a href="#" class="sort-active">По цене</a></li>
+      <li><a href="#" class="sort-not-active">По типу</a></li>
+      <li><a href="#" class="sort-not-active">По рейтингу</a></li>
+      </ul>
+      
+      <ul class="sort-of-triangle">
+      <li>
+      <a href="#" class="triangle-link">
+      <span class="visually-hiden">Отфильтровать по увеличению</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+      <path class="triangle" fill="#cacaca" d="M5.5 0L0 10h11z"/>
+      </svg>
+      </a>
+      </li>
+      
+      <li>
+      <a href="#" class="triangle-link">
+      <span class="visually-hiden">Отфильтровать по уменьшению</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+      <path class="triangle active-triangle" fill="#cacaca" d="M5.5 10L0 0h11"/>
+      </svg>
+      </a>
+      </li>
+      </ul>
+      </div>
   </section>
 
-  <section>
+  <section><!--Вся эта секция будет изменена стуктурно-->
     
     <h2 class="visually-hidden">Список отелей</h2><!--Заголовок сделан для поисковиков. На странице его нет-->
 
