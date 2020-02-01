@@ -27,7 +27,7 @@
     </header> 
 
     <main>
-      <h1>Город Седона</h1><!--Заголовок скрыть. Он нужен только для поисковиков-->
+      <h1 class="visually-hidden">Город Седона</h1><!--Заголовок скрыт. Он нужен только для поисковиков-->
       <section><!--Бэкграунд-фото прописать через CSS-->
         <div>
           <img src="img/jpg-sedona/background-photo.jpg" width="1200" hight="773" alt="Фото ратуши города Седона">
@@ -56,19 +56,25 @@
     </section>
 
     <section>
-      <h2>О Седоне</h2><!--Заголовок скрыть. Он нужен только для поисковиков-->
+      <h2 class="visually-hidden">О Седоне</h2><!--Заголовок скрыт. Он нужен только для поисковиков-->
       <ul><!--Иконки SVG Жильё,Еда,Сувениры прописать в CSS-->
         <li>
-          <a href="hotels.html">Жильё<br></a>
-            <span>Рекомендуем пожить в настоящем<br>мотеле, всё, как в кино!</span>
+           
+          <img class="icon-1" src="img/svg-sedona/icon-1.svg"><br>
+          <a href="hotels.html">Жильё</a>
+          <p>Рекомендуем пожить в настоящем<br>мотеле, всё, как в кино!</p>
           </li>
+
         <li>
-          <a href="restaurants.html">Еда<br></a>
-          <span>Всегда заказывайте фирменный бургер,<br>Вы не разочаруетесь!</span>
+          <img class="icon-2" src="img/svg-sedona/icon-2.svg"><br>
+          <a href="restaurants.html">Еда</a>
+          <p>Всегда заказывайте фирменный бургер,<br>Вы не разочаруетесь!</p>
         </li>
+
         <li>
-          <a href="shops.html">Сувениры<br></a>
-          <span>Не только китайского, но и местного<br>производства!</span>
+          <img class="icon-3" src="img/svg-sedona/icon-3.svg"><br>
+          <a href="shops.html">Сувениры</a>
+          <p>Не только китайского, но и местного<br>производства!</p>
         </li>
       </ul>
     </section>
@@ -86,7 +92,7 @@
     </section>
 
     <section>
-      <h2>Преимущества Седоны</h2><!--Заголовок скрыть. Он нужен только для поисковиков-->
+      <h2 class="visually-hidden">Преимущества Седоны</h2><!--Заголовок скрыт. Он нужен только для поисковиков-->
       <ul>
         <li>
           <span>Небольшая площадь<br></span>
@@ -116,36 +122,92 @@
       <img src="img/jpg-sedona/map_sedona.jpg" width="1200" hight="593" alt="Карта города Седона"><!--Карту нужно будет установить по всем правилам. Сделать интерактивной-->
     </section>
 
-    <section><!--Это модальное окно - блок бронирования гостиниц в Седоне будет сделан позже-->
-      <h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3><!--Заголовок блока бронирования-->
-      <span><a class="calendar" href="">Иконка календаря</a></span>
-      <span>Дата заезда</span>
-      <span>Дата выезда</span>
-      <span>Взрослые</span>
-      <span>Дети</span>
+    <section><!--Это модальное окно - блок бронирования гостиниц в Седоне-->
+    <span>
+    <a href="reservation_form.html" class="search-hotel">Поиск гостиницы в Седоне</a>
+    </span> 
+    
+      <fieldset>
+      <legend class="visually-hidden">Поиск гостиниц в Седоне</legend>
+      <form class="hotel-search" method="get" action="https://echo.htmlacademy.ru">
+        
+      <p>
+      <label for="check_in-date">Дата заезда</label>
+      <input id="check_in-date" type="date" name="checkin-date" value="24 апреля 2017">
+      <button class="calendar" type="button">
+      <span class="visually-hiden">Календарь выбора даты check-in</span>
+      </button>
+      </p>
+  
+      <p>
+      <label for="check_out-date">Дата вызаезда</label>
+      <input id="check_out-date" type="date" name="checkout-date" placeholder="4 июля 2017">
+      <button class="calendar" type="button">
+      <span class="visually-hiden">Календарь выбора даты check-out</span>
+      </button>
+      </p>
+    
+      <p>
+      <label for="adults">Взрослые:</label>
+      <button class="button_minus adult_minus" type="button">
+      <span class="visually-hiden">Уменьшение количества взрослых</span>-</button>
+      <input type="number" name="adults" id="adults" min="1" max="5" value="2">
+      <button class="button_plus adult_plus" type="button">
+      <span class="visually-hiden">Увеличение количества взрослых</span>+</button>
+      </p>
+    
+      <p>
+      <label for="children">Дети:</label>
+      <button class="button-minus children-minus" type="button">
+      <span class="visually-hiden">Уменьшение количества детей</span>-</button>
+      <input type="number" name="children" id="children" min="0" max="5" value="0">
+      <button class="button-plus children-plus" type="button">
+      <span class="visually-hiden">Увеличение количества детей</span>+</button>
+      </p>
+  
+      <p>
+      <input class="search-button" type="submit" value="Найти">
+      </p>
+  </form>
+  </fieldset> 
     </section>
 
     </main>
 
-    <footer><!--На всех страницах футер идентичен-->
-      <p>
-        #visitSEDONA<br>
-        Тел: +7(495) 666-02-66
-      </p>
-      <div>
-        <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Ю-тьюб</a></li>
-        </ul>
-      </div>
-
-      <p>
-        Website by: <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-академии">
+    <footer><!--Футер идентичен на всех страницах-->
+      <div class="footer-#visitsedona"><a href="#">#visitsedona</a></div>
+            
+      <ul class="social-networks">
+      <li>
+        <a href="#" class="tw-link">
+        <span class="visually-hiden">Твиттер</span>
+        <div class="social-tw"></div>
         </a>
-      </p>
-    </footer>
+      </li>
+            
+      <li>
+      <a href="#" class="fb-link">
+      <span class="visually-hiden">Фейсбук</span>
+      <div class="social-fb"></div>
+      </a>
+      </li>
+            
+      <li>
+      <a href="#" class="yotube-link">
+      <span class="visually-hiden">Ютуб</span>
+      <div class="social-youtube"></div>
+      </a>
+      </li>
+      </ul>
+            
+      <div class="copyright">
+      <span>website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">
+      <div class="htmlacademy-pic">
+        <span class="visually-hiden">Перейти на сайт HTML Academy</span>
+      </div>
+      </a>
+      </footer>
 
   </body>
 </html>

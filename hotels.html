@@ -36,7 +36,7 @@
 
   <section>
     
-    <h2>Список отелей</h2><!--Заголовок сделан для поисковиков. На странице его нет-->
+    <h2 class="visually-hidden">Список отелей</h2><!--Заголовок сделан для поисковиков. На странице его нет-->
 
   <div>
     <h3>Amara Resort & Spa</h3>
@@ -80,25 +80,40 @@
 
 </main>
 
-<footer><!--На всех страницах футер идентичен-->
-  <p>
-    #visitSEDONA<br>
-    Тел: +7(495) 666-02-66
-  </p>
-  <div>
-    <ul>
-      <li><a href="#">Твиттер</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Ю-тьюб</a></li>
-    </ul>
-  </div>
-
-  <p>
-    Website by: <a href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-академии">
+<footer><!--Футер идентичен на всех страницах-->
+  <div class="footer-#visitsedona"><a href="#">#visitsedona</a></div>
+        
+  <ul class="social-networks">
+  <li>
+    <a href="#" class="tw-link">
+    <span class="visually-hiden">Твиттер</span>
+    <div class="social-tw"></div>
     </a>
-  </p>
-</footer>
+  </li>
+        
+  <li>
+  <a href="#" class="fb-link">
+  <span class="visually-hiden">Фейсбук</span>
+  <div class="social-fb"></div>
+  </a>
+  </li>
+        
+  <li>
+  <a href="#" class="yotube-link">
+  <span class="visually-hiden">Ютуб</span>
+  <div class="social-youtube"></div>
+  </a>
+  </li>
+  </ul>
+        
+  <div class="copyright">
+  <span>website by</span>
+  <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-link">
+  <div class="htmlacademy-pic">
+    <span class="visually-hiden">Перейти на сайт HTML Academy</span>
+  </div>
+  </a>
+  </footer>
 
   </body>
 </html>
