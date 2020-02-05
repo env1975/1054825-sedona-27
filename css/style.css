@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #f2f2f2;
+    background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/background-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+    /*Стили для внутренних страниц зададим позже
+.inner-page {
+    color: #000000;
+    background-color: #f9f6f3;
+    background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-barbershop-27/img/jpg-barbershop/pattern.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+  }*/
+
+
+/*Задаём визуальное скрытие заголовков, которые только для поисковиков*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*Выравнивание контента до "Настоящий городок"*/
+.main-menu {
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  list-style: none;
+}
+  
+.main-menu li {
+  display: block;
+  float: left;
+  width: 240px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+  
+.main-menu h1 {
+  margin: 0;
+}
+  
+.main-menu a {
+  padding-top: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 56px;
+  color: #000000;
+}
+  
+.main-menu a:hover {
+  color: #81b3d2;
+}
+  
+.main-menu a:active {
+  color: #766357;
+}
+  
+.main-menu .active {
+  color: #766357;
+}
+  
+.main-menu .active:hover {
+  color: #604e43;
+}
+  
+.main-menu .active:active {
+  color: #d6d0cc;
+}
+  
+.content-main {
+background-color: #ffffff;
+}
+  
+.main-image {
+  height: 511px;
+  text-align: center;
+  background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-color: #acd5ee;
+}
+  
+.logo {
+    padding-top: 132px;
+}
+
+.intro {
+width: 570px;
+margin: 0 auto;
+padding-top: 57px;
+padding-bottom: 37px;
+text-align: center;
+line-height: 26px;
+}
+  
+.intro-text {
+font-size: 21px;
+color: #000000;
+}
+
+.intro p {
+margin-top: 22px;
+color: #333333;
+text-align: center;
+}
+
+/*Текст над модальным окном*/ 
+.intro-text-search {
+font-size: 30px;
+line-height: 24px;
+color: #000000;
+}
+
+.intro-search {
+padding-bottom: 35px;
+line-height: 24px;
+}
+
+/*Футер*/
+.main-footer {
+height: 95px;
+width: 100%;
+padding-top: 25px;
+background-color: rgba(255, 255, 255, 0.9);
+}
+  
+.main-index-footer {
+width: 1200px;
+position: absolute;
+z-index: 1000;
+margin-top: -120px;
+}
+  
+.footer-item{
+display: inline-block;
+width: 300px;
+margin-left: 50px;
+margin-right: 45px; 
+text-align: center;
+vertical-align: middle;
+}
+  
+.social-btn {
+display: inline-block;
+width: 46px;
+height: 48px;
+margin: 0;
+font-size: 0;
+text-align: center;
+vertical-align: top;
+text-decoration: none;
+color: #ffffff;
+background-color: #81b3d2;
+}
+  
+.social-btn span {
+font-size: 19px;
+line-height: 48px;
+}
+  
+.social-btn:hover {
+background-color: #669ec0;
+}
+  
+.social-btn:active {
+color: #88b6d1;
+background-color: #5496bd;
+}
+  
+.footer-hashtag p{
+font-size: 21px;
+line-height: 26px;
+font-weight: bold;
+}
+ 
+.footer-copyright span {
+line-height: 39px;
+}
+  
+.copyright-logo {
+display: inline-block;
+width: 113px;
+height: 39px;
+font-size: 0;
+vertical-align: top;
+background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
+background-repeat: no-repeat;
+background-position: -10px -10px;
+}
+  
+.copyright-logo:hover {
+background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
+background-repeat: no-repeat;
+background-position: -10px -69px;
+}
+  
+.copyright-logo:active {
+background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
+background-repeat: no-repeat;
+background-position: -10px -128px;
+}
+
+/* "f" */
+.icon-facebook::before { 
+content: "\66"; 
+} 
+
+ /* "t" */ 
+.icon-twitter::before { 
+    content: "\74"; 
+}
+
+ /* "" */
+.icon-youtube::before {
+content: "\f39e"; 
+} 
+
+
+
+.intro-search {
+  padding-bottom: 35px;
+  line-height: 24px;
+}
+  
+.intro-text-search {
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+}
+  
+.map {
+width: 100%;
+height: 593px;
+background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/map_sedona.jpg");
+background-repeat: no-repeat; 
+}
+  
+.search {
+width: 570px;
+margin: 0 auto;
+text-align: center;
+}
+  
+.search-hotels {
+position: relative;
+display: block;
+padding-top: 34px;
+padding-bottom: 26px;
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+text-align: center;
+text-decoration: none;
+color: #ffffff;
+background-color: #766357;  
+}
+  
+
+  
