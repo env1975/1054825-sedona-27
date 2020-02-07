@@ -1,65 +1,92 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    color: #333333;
-    background-color: #f2f2f2;
-    background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/background-photo.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    text-transform: uppercase;
+margin: 0;
+padding: 0;
+font-family: "PT Sans Narrow", Arial, sans-serif;
+font-size: 14px;
+line-height: 21px;
+color: #333333;
+background-color: #f2f2f2;
+background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/background-photo.jpg");
+background-repeat: no-repeat;
+background-position: top center;
+text-transform: uppercase;
+}
+/*Подключение стилизации шрифтов проекта
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-sedona";
+  src: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/Sedona-fonts/Sedona-font.woff") format("woff"),
+  url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/Sedona-fonts/Sedona-font.woff2") format("woff2"); 
 }
 
+[class^="icon-"]::before,
+[class*=" icon-"]::before 
+{
+display: inline-block;
+width: 1em;
+margin-right: 0.2em;
+margin-left: 0.2em;
+font-weight: normal;
+line-height: 1em;
+font-family: "Sedona-font"; 
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak-as: none;
+}
+*/
+
 .container {
-    width: 1200px;
-    margin: 0 auto;  
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+width: 1200px;
+margin: 0 auto;  
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 /*Задаём визуальное скрытие заголовков, которые только для поисковиков*/
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 /*Выравнивание контента до "Настоящий городок"*/
 .main-menu {
-  width: 100%;
-  height: 56px;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  list-style: none;
+width: 100%;
+height: 56px;
+margin: 0;
+padding: 0;
+background-color: #ffffff;
+list-style: none;
 }
   
 .main-menu li {
-  display: block;
-  float: left;
-  width: 240px;
-  height: 56px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+display: block;
+float: left;
+width: 240px;
+height: 56px;
+margin: 0;
+padding: 0;
+text-align: center;
 }
   
 .main-menu h1 {
-  margin: 0;
+margin: 0;
 }
   
 .main-menu a {
-  padding-top: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  line-height: 56px;
-  color: #000000;
+padding-top: 20px;
+font-weight: bold;
+text-decoration: none;
+line-height: 56px;
+color: #000000;
 }
   
 .main-menu a:hover {
@@ -95,7 +122,7 @@ background-color: #ffffff;
 }
   
 .logo {
-    padding-top: 132px;
+padding-top: 132px;
 }
 
 .intro {
@@ -106,7 +133,7 @@ padding-bottom: 37px;
 text-align: center;
 line-height: 26px;
 }
-  
+
 .intro-text {
 font-size: 21px;
 color: #000000;
@@ -114,15 +141,90 @@ color: #000000;
 
 .intro p {
 margin-top: 22px;
-color: #333333;
+}
+
+.index-content {
+height: 256px;
+text-align: center;
+color: #ffffff;
+background-color: #81b3d2;
+}
+
+.index-content-text-left {
+float: left;
+width: 400px;
+padding-top: 55px;
+}
+
+.index-content-img-right {
+float: right;
+height: 256px;
+margin: 0;
+background-color: #e7a79a;
+}
+
+.index-content-number {
+margin-top: 18px;
+margin-bottom: 20px;
+}
+
+.clearfix::after {
+content: "";
+display: block;
+clear: both;
+}
+
+.index-content-title {
+font-size: 21px;
+}
+
+.features-first {
+padding-top: 60px; 
+padding-bottom: 81px;
 text-align: center;
 }
 
-/*Текст над модальным окном*/ 
-.intro-text-search {
-font-size: 30px;
-line-height: 24px;
+.features-item {
+float: left;
+width: 300px;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.features-name {
+margin-top: 24px;
+font-weight: bold;
+font-size: 21px;
 color: #000000;
+}
+
+.features-item p {
+margin: 0;
+margin-top: 24px;
+}
+
+.picture-souvenirs {
+margin-bottom: -4px;
+}
+
+.index-content-img-left {
+float: left;
+height: 256px;
+margin: 0;
+background-color: #eac1ad;
+}
+
+.index-content-text-right {
+float: right;
+width: 400px;
+padding-top: 55px;
+}
+
+.features-second {
+padding-top: 23px;
+padding-bottom: 57px;
+text-align: center;
+background-color: #eeeeee;
 }
 
 .intro-search {
@@ -130,131 +232,25 @@ padding-bottom: 35px;
 line-height: 24px;
 }
 
-/*Футер*/
-.main-footer {
-height: 95px;
-width: 100%;
-padding-top: 25px;
-background-color: rgba(255, 255, 255, 0.9);
-}
-  
-.main-index-footer {
-width: 1200px;
-position: absolute;
-z-index: 1000;
-margin-top: -120px;
-}
-  
-.footer-item{
-display: inline-block;
-width: 300px;
-margin-left: 50px;
-margin-right: 45px; 
-text-align: center;
-vertical-align: middle;
-}
-  
-.social-btn {
-display: inline-block;
-width: 46px;
-height: 48px;
-margin: 0;
-font-size: 0;
-text-align: center;
-vertical-align: top;
-text-decoration: none;
-color: #ffffff;
-background-color: #81b3d2;
-}
-  
-.social-btn span {
-font-size: 19px;
-line-height: 48px;
-}
-  
-.social-btn:hover {
-background-color: #669ec0;
-}
-  
-.social-btn:active {
-color: #88b6d1;
-background-color: #5496bd;
-}
-  
-.footer-hashtag p{
-font-size: 21px;
-line-height: 26px;
-font-weight: bold;
-}
- 
-.footer-copyright span {
-line-height: 39px;
-}
-  
-.copyright-logo {
-display: inline-block;
-width: 113px;
-height: 39px;
-font-size: 0;
-vertical-align: top;
-background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
-background-repeat: no-repeat;
-background-position: -10px -10px;
-}
-  
-.copyright-logo:hover {
-background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
-background-repeat: no-repeat;
-background-position: -10px -69px;
-}
-  
-.copyright-logo:active {
-background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
-background-repeat: no-repeat;
-background-position: -10px -128px;
-}
-
-/* "f" */
-.icon-facebook::before { 
-content: "\66"; 
-} 
-
- /* "t" */ 
-.icon-twitter::before { 
-    content: "\74"; 
-}
-
- /* "" */
-.icon-youtube::before {
-content: "\f39e"; 
-} 
-
-
-
-.intro-search {
-  padding-bottom: 35px;
-  line-height: 24px;
-}
-  
 .intro-text-search {
-  font-size: 30px;
-  line-height: 24px;
-  color: #000000;
+font-size: 30px;
+line-height: 24px;
+color: #000000;
 }
-  
+
 .map {
 width: 100%;
 height: 593px;
 background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/map_sedona.jpg");
 background-repeat: no-repeat; 
 }
-  
+
 .search {
 width: 570px;
 margin: 0 auto;
 text-align: center;
 }
-  
+
 .search-hotels {
 position: relative;
 display: block;
@@ -268,6 +264,353 @@ text-decoration: none;
 color: #ffffff;
 background-color: #766357;  
 }
-  
 
-  
+.search-filters {
+position: absolute;
+z-index: 10;
+
+/* Не забыть это правило подключить, когда нужно будет делать поп-апы*/
+/*display: none;*/
+
+padding-top: 56px;
+padding-bottom: 55px;
+padding-left: 57px;
+padding-right: 54px;
+font-weight: bold;
+line-height: 26px; 
+background-color: #ffffff;
+box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Детально разобраться с этим разделом. Пока, всё сделано интуитивно, 
+с помощью "коллективного разума". Сам не понимаю, что это и зачем.
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90%  {transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {transform: translateX(10px); }
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0); }
+  50% {transform: translateY(70px); }
+  80% {transform: translateY(-50px); }
+  100% {transform: translateY(0); }
+  }
+
+.search-filters-show {
+display: block;
+animation-name: bounce;
+animation-duration: 0.7s;
+}
+
+.modal-error {
+animation-name: shake;
+animation-duration: 0.6s;
+}
+*/
+
+.field-data {
+margin-bottom: 27px;
+color: #000000;
+}
+
+.field-value-data {
+position: relative;
+margin-left: 114px;
+margin-right: 39px;
+}
+
+.field-data label {
+float: left;
+line-height: 38px;
+}
+.field-data input {
+width: 100%;
+height: 40px;
+box-sizing: border-box;
+padding-left: 15px;
+text-transform: uppercase;
+background-color: #f2f2f2;
+border: 0;   
+}
+
+.field-data input:hover {
+background-color: #ebebeb;
+}
+
+.field-data input:focus {
+background-color: #ffffff;
+outline: 2px solid #e5e5e5;
+}
+
+/*Разобраться с иконкой календаря*/
+.btn-calendar {
+float: right;
+width: 38px;
+height: 40px;
+margin-right: -38px;
+padding: 0;
+font-size: 21px;
+line-height: 26px;
+text-transform: uppercase;
+vertical-align: top;
+color: #c2c2c2;
+background-color: #f2f2f2;
+border: 0;
+outline: 0; 
+}
+
+.btn-calendar:hover {
+color: #000000;
+}
+
+.btn-calendar:active {
+color: #81b3d2;
+}
+
+.btn-people-number {
+width: 38px;
+height: 40px;
+padding: 0;
+margin: 0;
+vertical-align: middle;
+color: #a9a9a9;
+background-color: #f2f2f2;
+border: 0;
+outline: 0;
+}
+
+.btn-people-number:hover {
+color: #000000;
+}
+
+.btn-people-number:active {
+color: #81b3d2;
+}
+
+.people-number input,
+.children-number input {
+width: 38px;
+height: 40px;
+margin: 0;
+padding: 0;
+text-align: center;
+vertical-align: middle;
+background-color: #f2f2f2;
+border: 0;
+outline: 0;
+}
+
+/* Детально разобраться с этим разделом. Пока, всё сделано интуитивно, 
+с помощью "коллективного разума". Сам не понимаю, что это и зачем.
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+-webkit-appearance: none; margin: 0px;
+}
+*/
+
+.field-people {
+margin-bottom: 54px;
+}
+
+.field-people > label {
+float: left;
+line-height: 38px;
+}
+
+.field-value-people {
+height: 40px;
+margin-left: 114px;
+text-align: left; 
+}
+
+.btn-plus {
+margin-left: -4px;
+}
+
+.btn-minus {
+margin-right: -4px;
+}
+
+.people-number-adults{
+float: left;
+}
+
+.children-number {
+float: right;
+}
+
+.people-number-children {
+display: inline-block;
+margin-left: 25px;
+}
+
+.search-btn {
+width: 458px;
+height: 58px;
+padding: 0;
+font-size: 21px;
+text-transform: uppercase;
+color: #ffffff;
+background-color: #81b3d2;
+border: 0;
+outline: 0;
+}
+
+.search-btn:hover {
+background-color: #669ec0;
+}
+
+.search-btn:active {
+color: #88b6d1;
+background-color: #5496bd;
+}
+
+/*Прописываем иконки модального окна*/
+
+/* "▲" */
+.icon-up-dir::before {
+content: "\25b2"; 
+} 
+
+/* "▼" */
+.icon-down-dir::before { 
+content: "\25bc"; 
+} 
+
+ /* "★" */
+.icon-star::before {
+content: "\2605"; 
+}
+
+/* "☐" */
+.icon-check-off::before { 
+content: "\2610"; 
+} 
+
+/* "☑" */
+.icon-check-on::before {
+content: "\2611"; 
+} 
+
+/* "" */
+.icon-calendar::before {
+content: "\e273"; 
+} 
+
+/* "" */
+.icon-plus::before {
+content: "\e801"; 
+} 
+
+/* "" */
+.icon-minus::before { 
+content: "\e802"; 
+} 
+
+/*Футер*/
+.main-footer {
+height: 95px;
+width: 100%;
+padding-top: 25px;
+background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-index-footer {
+width: 1200px;
+position: absolute;
+z-index: 1000;
+margin-top: -120px;
+}
+
+.footer-item{
+display: inline-block;
+width: 300px;
+margin-left: 50px;
+margin-right: 45px;
+text-align: center;
+vertical-align: middle;
+}
+
+.social-btn {
+display: inline-block;
+width: 46px;
+height: 48px;
+margin: 0;
+font-size: 0;
+text-align: center;
+vertical-align: top;
+text-decoration: none;
+color: #ffffff;
+background-color: #81b3d2;
+}
+
+.social-btn span {
+font-size: 19px;
+line-height: 48px;
+}
+
+.social-btn:hover {
+background-color: #669ec0;
+}
+
+.social-btn:active {
+color: #88b6d1;
+background-color: #5496bd;
+}
+
+/*Прописываем иконки футера Разобраться с иконками. Взяты с сайта: https://dividezigns.com/divi-icon-codes/*/
+
+/* "f" */
+.icon-facebook::before { 
+content: "\66"; 
+} 
+ 
+/* "t" */
+.icon-twitter::before { 
+content: "\74"; 
+} 
+ 
+/* "" */
+.icon-youtube::before {
+content: "\e0a3";
+} 
+
+.footer-hashtag p{
+font-size: 21px;
+line-height: 26px;
+font-weight: bold;
+}
+
+.footer-copyright span {
+line-height: 39px;
+}
+
+/*Разобраться с расположением логотипа HTML*/
+.copyright-logo {
+display: inline-block;
+width: 115px;
+height: 41px;
+font-size: 0;
+vertical-align: top;
+background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/png-sedona/logo-htmla.png");
+background-repeat: no-repeat;
+background-position: -10px -10px;
+}
+
+.copyright-logo:hover {
+background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
+background-repeat: no-repeat;
+background-position: -10px -69px;
+}
+
+.copyright-logo:active {
+background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
+background-repeat: no-repeat;
+background-position: -10px -128px;
+}
+
+
+
