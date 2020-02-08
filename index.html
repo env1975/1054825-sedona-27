@@ -4,8 +4,8 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" 
   rel="stylesheet">
-  <link href="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/css/style.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   
   <meta charset="utf-8">  
   <meta name="viewport" content="width=device-width">
@@ -30,7 +30,7 @@
 
             <li>
               <h1>
-                <img src="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/header-logo.svg" width="138" height="70" alt="Логотип города Седона">
+                <img src="img/svg-sedona/header-logo.svg" width="138" height="70" alt="Логотип города Седона">
               </h1>
             </li>    
             <li>
@@ -46,7 +46,7 @@
     <main class="content-main">
       <div class="main-image">
         <div class="logo">
-          <img src="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/intro-welcome.svg" width="459" height="353" alt="Логотип города Седона">
+          <img src="img/svg-sedona/intro-welcome.svg" width="459" height="353" alt="Логотип города Седона">
         </div>
       </div>    
       <section class="intro">
@@ -61,26 +61,26 @@
           <p>Седона &mdash; не атракцион для туристов,<br> там течет своя жизнь</p>
         </section> 
         <figure class="index-content-img-right">
-          <img src="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/sedona_town.jpg" width="800" height="256" alt="Ратуша города Седона">
+          <img src="img/jpg-sedona/sedona_town.jpg" width="800" height="256" alt="Ратуша города Седона">
         </figure>           
       </div>  
       <section class="features-first clearfix">
         <div class="features-item">
-          <img src="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/icon-1.svg" width="75" height="72" alt="Жильё в Седоне">
+          <img src="img/svg-sedona/icon-1.svg" width="75" height="72" alt="Жильё в Седоне">
           <div class="features-name">
             Жилье
           </div>
           <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
         </div>
         <div class="features-item">
-          <img src="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/icon-2.svg" width="74" height="70" alt="Где поесть в Седоне">
+          <img src="img/svg-sedona/icon-2.svg" width="74" height="70" alt="Где поесть в Седоне">
           <div class="features-name">
             Еда
           </div>
           <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
         </div>
         <div class="features-item">
-          <img class="picture-souvenirs" src="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/icon-3.svg" width="64" height="76" alt="Сувениры в городе Седона">
+          <img class="picture-souvenirs" src="img/svg-sedona/icon-3.svg" width="64" height="76" alt="Сувениры в городе Седона">
           <div class="features-name">
             Сувениры
           </div>
@@ -89,7 +89,7 @@
       </section>    
       <div class="index-content clearfix">
         <figure class="index-content-img-left">
-          <img src="/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/devil_brige.jpg" width="800" height="256" alt="Мост дьявола">
+          <img src="img/jpg-sedona/devil_brige.jpg" width="800" height="256" alt="Мост дьявола">
         </figure>
         <section class="index-content-text-right">
           <b class="index-content-title">Там есть<br> мост дьявола</b>
@@ -127,7 +127,7 @@
             <label for="arrival-data">Дата заезда:</label>
             <div class="field-value-data">
               <button class="btn-calendar" type="button">
-                <span class="icon-calendar"></span>
+                <span class="icon-calendar"><img src="img/svg-sedona/calendar.svg"></span>
               </button>
               <input type="text" name="arrival-data" id="arrival-data" placeholder="Введите дату заезда" tabindex="1">
             </div>
@@ -136,7 +136,7 @@
             <label for="departure-data">Дата выезда:</label>
             <div class="field-value-data">
               <button class="btn-calendar" type="button">
-                <span class="icon-calendar"></span>
+                <span class="icon-calendar"><img src="img/svg-sedona/calendar.svg"></span>
               </button>
               <input type="text" name="departure-data" id="departure-data" placeholder="Введите дату выезда" tabindex="2">
             </div>    
@@ -146,22 +146,22 @@
             <div class="field-value-people">
               <div class="people-number people-number-adults">
                 <button class="btn-minus btn-people-number" type="button">
-                  <span class="icon-minus"></span>
+                  <span class="icon-minus">&mdash;</span>
                 </button>
                 <input type="number" name="adults-guests" id="adults" value="2">
                 <button class="btn-plus btn-people-number" type="button">
-                  <span class="icon-plus"></span>
+                  <span class="icon-plus">&#10010;</span>
                 </button>
               </div>
               <div class="children-number">
                 <label for="children">Дети:</label>
                 <div class="people-number people-number-children">
                   <button class="btn-minus btn-people-number" type="button">
-                    <span class="icon-minus"></span>
+                    <span class="icon-minus">&mdash;</span>
                   </button>
                   <input type="number" name="children-guests" id="children" value="0">  
                   <button class="btn-plus btn-people-number" type="button">
-                    <span class="icon-plus"></span>
+                    <span class="icon-plus">&#10010;</span>
                   </button>
                 </div>
               </div>
@@ -186,9 +186,15 @@
         
       </section>  
       <section class="footer-social footer-item">
-        <a class="social-btn" href="#">Twitter<span class="icon-twitter"></span></a>
-        <a class="social-btn" href="#">Facebook<span class="icon-facebook"></span></a>
-        <a class="social-btn" href="#">YouTube<span class="icon-youtube"></span></a>
+        <a class="social-btn" href="#">
+          <img src="img/svg-sedona/twitter.svg">Twitter<span class="icon-twitter"></span>
+        </a>
+        <a class="social-btn" href="#">
+          <img src="img/svg-sedona/fb-icon.svg">Facebook<span class="icon-facebook"></span>
+        </a>
+        <a class="social-btn" href="#">
+          <img src="img/svg-sedona/youtube.svg">YouTube<span class="icon-youtube"></span>
+        </a>
       </section>  
       <section class="footer-copyright footer-item">
         <span>Website by</span>

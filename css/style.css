@@ -6,7 +6,7 @@ font-size: 14px;
 line-height: 21px;
 color: #333333;
 background-color: #f2f2f2;
-background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/background-photo.jpg");
+background-image: url("img/jpg-sedona/background-photo.jpg");
 background-repeat: no-repeat;
 background-position: top center;
 text-transform: uppercase;
@@ -16,8 +16,8 @@ text-transform: uppercase;
   font-weight: normal;
   font-style: normal;
   font-family: "symbols-sedona";
-  src: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/Sedona-fonts/Sedona-font.woff") format("woff"),
-  url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/Sedona-fonts/Sedona-font.woff2") format("woff2"); 
+  src: url("Sedona-fonts/Sedona-font.woff") format("woff"),
+  url("Sedona-fonts/Sedona-font.woff2") format("woff2"); 
 }
 
 [class^="icon-"]::before,
@@ -90,23 +90,23 @@ color: #000000;
 }
   
 .main-menu a:hover {
-  color: #81b3d2;
+color: #81b3d2;
 }
   
 .main-menu a:active {
-  color: #766357;
+color: #766357;
 }
   
 .main-menu .active {
-  color: #766357;
+color: #766357;
 }
   
 .main-menu .active:hover {
-  color: #604e43;
+color: #604e43;
 }
   
 .main-menu .active:active {
-  color: #d6d0cc;
+color: #d6d0cc;
 }
   
 .content-main {
@@ -114,11 +114,11 @@ background-color: #ffffff;
 }
   
 .main-image {
-  height: 511px;
-  text-align: center;
-  background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-color: #acd5ee;
+height: 511px;
+text-align: center;
+background-image: url("img/jpg-sedona/background-photo.jpg");
+background-repeat: no-repeat;
+background-color: #acd5ee;
 }
   
 .logo {
@@ -241,7 +241,7 @@ color: #000000;
 .map {
 width: 100%;
 height: 593px;
-background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/jpg-sedona/map_sedona.jpg");
+background-image: url("img/jpg-sedona/map_sedona.jpg");
 background-repeat: no-repeat; 
 }
 
@@ -468,7 +468,7 @@ color: #88b6d1;
 background-color: #5496bd;
 }
 
-/*Прописываем иконки модального окна*/
+/*Прописываем иконки модального окна. Иконки отображаются некорректно. Придётся переделывать.*/
 
 /* "▲" */
 .icon-up-dir::before {
@@ -493,21 +493,6 @@ content: "\2610";
 /* "☑" */
 .icon-check-on::before {
 content: "\2611"; 
-} 
-
-/* "" */
-.icon-calendar::before {
-content: "\e273"; 
-} 
-
-/* "" */
-.icon-plus::before {
-content: "\e801"; 
-} 
-
-/* "" */
-.icon-minus::before { 
-content: "\e802"; 
 } 
 
 /*Футер*/
@@ -561,23 +546,6 @@ color: #88b6d1;
 background-color: #5496bd;
 }
 
-/*Прописываем иконки футера Разобраться с иконками. Взяты с сайта: https://dividezigns.com/divi-icon-codes/*/
-
-/* "f" */
-.icon-facebook::before { 
-content: "\66"; 
-} 
- 
-/* "t" */
-.icon-twitter::before { 
-content: "\74"; 
-} 
- 
-/* "" */
-.icon-youtube::before {
-content: "\e0a3";
-} 
-
 .footer-hashtag p{
 font-size: 21px;
 line-height: 26px;
@@ -595,22 +563,24 @@ width: 115px;
 height: 41px;
 font-size: 0;
 vertical-align: top;
-background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/png-sedona/logo-htmla.png");
+background-image: url("img/png-sedona/logo-htmla.png");
 background-repeat: no-repeat;
-background-position: -10px -10px;
+background-position: 5px 0px;
 }
 
 .copyright-logo:hover {
-background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
+background-image: url("img/svg-sedona/logo-htmlacademy.svg");
 background-repeat: no-repeat;
-background-position: -10px -69px;
+background-position: 5px 0px;
+background-color: #81b3d2;
 }
 
 .copyright-logo:active {
-background-image: url("/Users/evgenyvoronov/Documents/GitHub/1054825-sedona-27/img/svg-sedona/logo-htmlacademy.svg");
+background-image: url("img/svg-sedona/logo-htmlacademy.svg");
 background-repeat: no-repeat;
-background-position: -10px -128px;
+background-position: 5px 0px;
 }
+
 
 
 
