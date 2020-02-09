@@ -6,7 +6,6 @@ font-size: 14px;
 line-height: 21px;
 color: #333333;
 background-color: #f2f2f2;
-background-image: url("img/jpg-sedona/background-photo.jpg");
 background-repeat: no-repeat;
 background-position: top center;
 text-transform: uppercase;
@@ -116,7 +115,7 @@ background-color: #ffffff;
 .main-image {
 height: 511px;
 text-align: center;
-background-image: url("img/jpg-sedona/background-photo.jpg");
+background-image: url("../img/png-sedona/background-photo.png");
 background-repeat: no-repeat;
 background-color: #acd5ee;
 }
@@ -241,7 +240,7 @@ color: #000000;
 .map {
 width: 100%;
 height: 593px;
-background-image: url("img/jpg-sedona/map_sedona.jpg");
+background-image: url("../img/jpg-sedona/map_sedona.jpg");
 background-repeat: no-repeat; 
 }
 
@@ -563,20 +562,20 @@ width: 115px;
 height: 41px;
 font-size: 0;
 vertical-align: top;
-background-image: url("img/png-sedona/logo-htmla.png");
+background-image: url("../img/png-sedona/logo-htmla.png");
 background-repeat: no-repeat;
 background-position: 5px 0px;
 }
 
 .copyright-logo:hover {
-background-image: url("img/svg-sedona/logo-htmlacademy.svg");
+background-image: url("../img/svg-sedona/logo-htmlacademy.svg");
 background-repeat: no-repeat;
 background-position: 5px 0px;
 background-color: #81b3d2;
 }
 
 .copyright-logo:active {
-background-image: url("img/svg-sedona/logo-htmlacademy.svg");
+background-image: url("../img/svg-sedona/logo-htmlacademy.svg");
 background-repeat: no-repeat;
 background-position: 5px 0px;
 }
