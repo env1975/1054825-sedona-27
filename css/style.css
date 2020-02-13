@@ -10,18 +10,17 @@ background-repeat: no-repeat;
 background-position: top center;
 text-transform: uppercase;
 }
-/*Подключение стилизации шрифтов проекта
+
 @font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "symbols-sedona";
-  src: url("Sedona-fonts/Sedona-font.woff") format("woff"),
-  url("Sedona-fonts/Sedona-font.woff2") format("woff2"); 
+font-weight: normal;
+font-style: normal;
+font-family: "symbols-sedona";
+src: url("../Sedona-fonts/Sedona-font.woff") format("woff"),
+url("../Sedona-fonts/Sedona-font.woff2") format("woff2"); 
 }
 
 [class^="icon-"]::before,
-[class*=" icon-"]::before 
-{
+[class*=" icon-"]::before {
 display: inline-block;
 width: 1em;
 margin-right: 0.2em;
@@ -36,7 +35,6 @@ font-style: normal;
 font-variant: normal;
 speak-as: none;
 }
-*/
 
 .container {
 width: 1200px;
@@ -115,7 +113,7 @@ background-color: #ffffff;
 .main-image {
 height: 511px;
 text-align: center;
-background-image: url("../img/png-sedona/background-photo.png");
+background-image: url("../img/jpg-sedona/BG-1.jpg");
 background-repeat: no-repeat;
 background-color: #acd5ee;
 }
@@ -236,13 +234,14 @@ font-size: 30px;
 line-height: 24px;
 color: #000000;
 }
-
+/* Карту можно прописать и фотографией, но придётся "оживлять" её JS
 .map {
 width: 100%;
 height: 593px;
 background-image: url("../img/jpg-sedona/map_sedona.jpg");
 background-repeat: no-repeat; 
 }
+*/
 
 .search {
 width: 570px;
@@ -343,7 +342,7 @@ background-color: #ffffff;
 outline: 2px solid #e5e5e5;
 }
 
-/*Разобраться с иконкой календаря*/
+/*Оживить календарь посредством JS, если останется время*/
 .btn-calendar {
 float: right;
 width: 38px;
@@ -467,33 +466,6 @@ color: #88b6d1;
 background-color: #5496bd;
 }
 
-/*Прописываем иконки модального окна. Иконки отображаются некорректно. Придётся переделывать.*/
-
-/* "▲" */
-.icon-up-dir::before {
-content: "\25b2"; 
-} 
-
-/* "▼" */
-.icon-down-dir::before { 
-content: "\25bc"; 
-} 
-
- /* "★" */
-.icon-star::before {
-content: "\2605"; 
-}
-
-/* "☐" */
-.icon-check-off::before { 
-content: "\2610"; 
-} 
-
-/* "☑" */
-.icon-check-on::before {
-content: "\2611"; 
-} 
-
 /*Футер*/
 .main-footer {
 height: 95px;
@@ -555,31 +527,439 @@ font-weight: bold;
 line-height: 39px;
 }
 
-/*Разобраться с расположением логотипа HTML*/
 .copyright-logo {
 display: inline-block;
-width: 115px;
-height: 41px;
 font-size: 0;
 vertical-align: top;
-background-image: url("../img/png-sedona/logo-htmla.png");
-background-repeat: no-repeat;
-background-position: 5px 0px;
+fill: #231f20;
 }
 
 .copyright-logo:hover {
-background-image: url("../img/svg-sedona/logo-htmlacademy.svg");
-background-repeat: no-repeat;
-background-position: 5px 0px;
-background-color: #81b3d2;
+fill: #81b3d2;
 }
 
 .copyright-logo:active {
-background-image: url("../img/svg-sedona/logo-htmlacademy.svg");
+fill: #bdbbbc;
+}
+
+/*Стилизация страницы hotels.html*/
+
+/* "☐" */
+.icon-check-off::before { 
+content: "\2610"; 
+} 
+  
+/* "☑" */
+.icon-check-on::before {
+content: "\2611"; 
+} 
+
+.content-selection {
+padding-left: 73px;
+padding-right: 73px;
+padding-bottom: 11px;
+padding-top: 26px;
+background-image: url("../img/png-sedona/hotels-bg.png"); /* width: 1200px; height: 217px;*/
 background-repeat: no-repeat;
-background-position: 5px 0px;
+}
+
+.content-selection li {
+list-style-type: none;
+}
+  
+.conveniences {
+float: left;
+width: 217px;
+margin-right: 25px;
+}
+  
+.housing-type {
+float: left;
+width: 230px; 
+}
+  
+.filters-title {
+font-size: 16px;
+line-height: 21px;
+font-weight: 600;
+color: #ffffff;
+}
+  
+.filter-range {
+float: right;
+width: 330px;
+margin: 0 auto;
+font-size: 14px;
+font-weight: 400;
+color: #ffffff;
+}
+  
+.filters-range-title {
+margin-bottom: 9px;
+font-size: 16px;
+line-height: 21px;
+font-weight: 600;
+}
+
+input[type="checkbox"] {
+display: none;
+}
+
+input[type="checkbox"]+label {
+position: relative;
+display: block;
+margin: 10px 0;
+padding-left: 45px;
+line-height: 20px;
+cursor: pointer;    
+}
+
+input[type="checkbox"]+label::before {
+content: "\2610";
+position: absolute;
+top: 0;
+left: 0;
+width: 10px;
+height: 10px;
+font-size: 26px;
+font-family: "Sedona-font";
+}
+
+input[type="checkbox"]:checked+label::before {
+content: "\2611";
+}
+
+.price-controls {
+position: relative;
+height: 36px;
+margin-bottom: 14px;
+font-size: 0;
+border: 2px solid #ffffff;
+border-radius: 2px;
+}
+
+.price-controls::after {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 2px;
+height: 22px;
+background: #ffffff;
 }
 
 
+.price-controls label {
+display: inline-block;
+font-size: 14px;
+line-height: 34px;
+vertical-align: top;
+cursor: pointer;
+}
 
+.price-controls .min-price,
+.price-controls .max-price {
+width: 98px;
+padding-left: 65px;
+}
 
+.price-controls input {
+width: 60px;
+margin: 0;
+color: inherit;
+font: inherit;
+background: none;
+border: 0;
+outline: 0;
+} 
+
+.range-controls {
+position: relative;
+margin-bottom: 36px;
+}
+
+.range-controls .scale {
+height: 2px;
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+width: 80%;
+height: 2px;
+background-color: #ffffff;
+}
+
+.range-toggle {
+position: absolute;
+top: -9px;
+width: 4px;
+height: 4px;
+background-color: #ababab;
+border: 8px solid #ffffff;
+border-radius: 50%;
+box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+cursor: pointer;
+}
+
+.range-toggle:hover {
+background-color: #1c4f80;
+}
+
+.range-toggle-min {
+left: 0;
+}
+
+.range-toggle-max {
+left: 80%;
+}
+
+.list-filters {
+margin: 0;
+padding: 0;
+padding-top: 11px;
+color: #ffffff;
+list-style: none;
+}
+
+.list-filters li {
+margin-bottom: 26px;
+}
+
+.list-filters input[disabled="disabled"]+label {
+color: #6a6a6a;
+}
+
+.btn-transparent {
+display: block;
+margin: 0 auto;
+padding: 6px 35px;
+font-size: 14px;
+line-height: 20px;
+text-transform: uppercase;
+color: #ffffff;
+background: transparent;
+border: 2px solid #ffffff;
+border-radius: 2px;
+outline: 0;
+cursor: pointer;
+}
+
+.btn-transparent:hover {
+color: #000000;
+background-color: #ffffff;
+}
+
+.search-result {
+margin-top: 28px;
+padding-left: 73px;
+padding-right: 73px;
+padding-bottom: 31px;
+background-color: #ffffff;
+border-bottom: 1px solid #e5e5e5;
+}
+
+.result-number {
+float: left;
+margin: 0;
+padding: 0;
+font-size: 21px;
+line-height: 26px;
+}
+
+.result-filters-name {
+float:left;
+margin-top: 7px;
+margin-left: 48px;
+margin-right: 38px;
+font-size: 12px;
+line-height: 18px;
+}
+
+.filters-sorting-list li {
+float: left;
+margin-top: 6px;
+margin-right: 30px;
+list-style-type: none;
+}
+
+.filters-sorting {
+text-decoration: none;
+font-size: 12px;
+line-height: 18px;
+border-bottom: 1px dotted #81b3d2;
+color: #b2b2b2;
+}
+
+.filters-sorting:hover {
+color: #81b3d2;
+}
+
+.filters-sorting:active {
+color: #000000;
+border: 0;
+}
+
+.filters-sorting-list .active {
+color: #81b3d2;
+border: 0;
+}
+
+.filters-sorting-list {
+margin-top: 7px;
+}
+
+.pointers {
+float: right;
+}
+
+.pointer-arrow {
+display: inline-block;
+width: 23px;
+height: 23px;
+margin: 0px;
+text-align: center;
+vertical-align: top;
+color: #cccccc;
+}
+
+.pointer-arrow span {
+font-size: 23px;
+line-height: 23px;
+}
+
+.pointers .active {
+color: #81b3d2;
+}
+
+.pointer-arrow:hover {
+color: #000000;
+}
+
+.pointer-arrow:active {
+color: #81b3d2;
+}
+
+.housing-info {
+height: 90px;
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 73px;
+padding-right: 73px;
+border-bottom: 1px solid #e5e5e5;
+}
+
+.housing-image {
+float: left;
+margin-right: 30px;
+}
+
+.more-info {
+float: left;
+width: 118px;
+margin-right: 0px;
+}
+
+.housing-price {
+float: left;
+width: 143px;
+}
+
+.rating {
+float: right;
+text-align: right; 
+}
+
+.rating-stars {
+display: inline-block;
+height: 25px;
+margin: 0;
+text-align: center;
+vertical-align: top;
+text-decoration: none;
+color: #81b3d2;
+background-color: #ffffff;
+}
+
+.rating-stars span {
+float: right;
+font-size: 17px;
+line-height: 21px;  
+}
+
+.housing-name {
+margin-top: -5px;
+margin-bottom: 7px;
+font-size: 21px;
+line-height: 26px;
+font-weight: bold;
+color: #000000;
+cursor: pointer;
+}
+
+.housing-name:hover {
+color: #81b3d2;
+}
+
+.housing-name:active {
+color: #b2b2b2;
+}
+
+.btn-detail {
+float: left;
+height: 26px;
+margin-right: 8px;
+padding-left: 16px;
+padding-right: 16px;
+line-height: 26px;
+font-weight: bold;
+text-decoration: none;
+color: #ffffff;
+background-color: #81b3d2;
+}
+
+.btn-detail:hover {
+color: #ffffff;
+background-color: #669ec0;
+}
+
+.btn-detail:active {
+color: #88b6d1;
+background-color: #5496bd;
+}
+
+.btn-book {
+float: left;
+height: 26px;
+padding-left: 20px;
+padding-right: 15px;
+font-weight: bold;
+line-height: 26px;
+text-decoration: none;
+color: #ffffff;
+background-color: #766357;
+}
+
+.btn-book:hover {
+color: #ffffff;
+background-color: #604e43;
+}
+
+.btn-book:active {
+color: #857871;
+background-color: #503e33;
+}
+
+.main-housing-info  {
+margin-bottom: 15px;
+}
+
+.grade {
+height: 26px;
+margin-top: 39px;
+padding-left: 15px;
+padding-right: 15px;
+line-height: 26px;
+color: #666666;
+background-color: #f2f2f2;
+}
