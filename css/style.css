@@ -234,14 +234,14 @@ font-size: 30px;
 line-height: 24px;
 color: #000000;
 }
-/* Карту можно прописать и фотографией, но придётся "оживлять" её JS
+/* Карта прописана на случай, если интерактивная не загрузится*/
 .map {
 width: 100%;
 height: 593px;
+margin-bottom: -120px;
 background-image: url("../img/jpg-sedona/map_sedona.jpg");
 background-repeat: no-repeat; 
 }
-*/
 
 .search {
 width: 570px;
@@ -267,8 +267,8 @@ background-color: #766357;
 position: absolute;
 z-index: 10;
 
-/* Не забыть это правило подключить, когда нужно будет делать поп-апы*/
-/*display: none;*/
+
+/*display: none; Не забыть это правило подключить, когда нужно будет делать поп-апы*/
 
 padding-top: 56px;
 padding-bottom: 55px;
@@ -342,7 +342,7 @@ background-color: #ffffff;
 outline: 2px solid #e5e5e5;
 }
 
-/*Оживить календарь посредством JS, если останется время*/
+
 .btn-calendar {
 float: right;
 width: 38px;
@@ -355,16 +355,29 @@ text-transform: uppercase;
 vertical-align: top;
 color: #c2c2c2;
 background-color: #f2f2f2;
+cursor: pointer;
 border: 0;
-outline: 0; 
+outline: 0;
 }
 
-.btn-calendar:hover {
-color: #000000;
+.icon-calendar {
+padding-top:9px;
+display: inline-block;
+font-size: 0;
+vertical-align: center;
+fill: #cacaca;
 }
-
-.btn-calendar:active {
-color: #81b3d2;
+  
+.icon-calendar:hover {
+fill: #000000;
+}
+  
+.icon-calendar:focus {
+fill: #000000;
+}
+  
+.icon-calendar:active {
+fill: #81b3d2;
 }
 
 .btn-people-number {
@@ -377,11 +390,14 @@ color: #a9a9a9;
 background-color: #f2f2f2;
 border: 0;
 outline: 0;
+font-size:1.8vw;
+cursor: pointer;
 }
 
 .btn-people-number:hover {
 color: #000000;
 }
+
 
 .btn-people-number:active {
 color: #81b3d2;
@@ -455,6 +471,7 @@ color: #ffffff;
 background-color: #81b3d2;
 border: 0;
 outline: 0;
+cursor: pointer;
 }
 
 .search-btn:hover {
@@ -476,9 +493,9 @@ background-color: rgba(255, 255, 255, 0.9);
 
 .main-index-footer {
 width: 1200px;
-position: absolute;
-z-index: 1000;
-margin-top: -120px;
+position: relative;
+z-index: 2;
+/*margin-top: -120px;*/
 }
 
 .footer-item{
