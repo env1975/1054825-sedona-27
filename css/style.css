@@ -406,6 +406,7 @@ color: #81b3d2;
 .people-number input,
 .children-number input {
 display: inline-block;
+margin: 0;
 width: 38px;
 height: 40px;
 padding: 0;
