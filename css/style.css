@@ -89,6 +89,10 @@ color: #000000;
 .main-menu a:hover {
 color: #81b3d2;
 }
+
+.main-menu a:focus {
+color: #81b3d2;
+}
   
 .main-menu a:active {
 color: #766357;
@@ -99,6 +103,10 @@ color: #766357;
 }
   
 .main-menu .active:hover {
+color: #604e43;
+}
+
+.main-menu .active:focus {
 color: #604e43;
 }
   
@@ -234,6 +242,7 @@ font-size: 30px;
 line-height: 24px;
 color: #000000;
 }
+
 /* Карта прописана на случай, если интерактивная не загрузится*/
 .map {
 width: 100%;
@@ -280,8 +289,8 @@ background-color: #ffffff;
 box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.2); 
 }
 
-/* Детально разобраться с этим разделом. Пока, всё сделано интуитивно, 
-с помощью "коллективного разума". Сам не понимаю, что это и зачем.
+/* Детально разобраться с анимацией. Пока, всё сделано интуитивно, 
+с помощью "коллективного разума"
 
 @keyframes shake {
   0%, 100% {transform: translateX(0); }
@@ -305,8 +314,7 @@ animation-duration: 0.7s;
 .modal-error {
 animation-name: shake;
 animation-duration: 0.6s;
-}
-*/
+} */
 
 .field-data {
 margin-bottom: 27px;
@@ -398,6 +406,9 @@ cursor: pointer;
 color: #000000;
 }
 
+btn-people-number:focus {
+color: #000000;
+}
 
 .btn-people-number:active {
 color: #81b3d2;
@@ -417,9 +428,7 @@ border: 0;
 outline: 0;
 }
 
-/* Детально разобраться с этим разделом. Пока, всё сделано интуитивно, 
-с помощью "коллективного разума". Сам не понимаю, что это и зачем.
-
+/*
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
 -webkit-appearance: none; margin: 0px;
@@ -479,6 +488,10 @@ cursor: pointer;
 background-color: #669ec0;
 }
 
+.search-btn:focus {
+background-color: #669ec0;
+}
+
 .search-btn:active {
 color: #88b6d1;
 background-color: #5496bd;
@@ -530,6 +543,10 @@ line-height: 48px;
 background-color: #669ec0;
 }
 
+.social-btn:focus {
+  background-color: #669ec0;
+  }
+
 .social-btn:active {
 color: #88b6d1;
 background-color: #5496bd;
@@ -555,6 +572,10 @@ fill: #231f20;
 .copyright-logo:hover {
 fill: #81b3d2;
 }
+
+.copyright-logo:focus {
+  fill: #81b3d2;
+  }
 
 .copyright-logo:active {
 fill: #bdbbbc;
