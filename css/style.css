@@ -457,7 +457,6 @@ padding-left: 15px;
 text-transform: uppercase;
 color: #000000;
 font-weight: bold;
-
 background-color: #f2f2f2;
 border: 0;   
 }
@@ -469,6 +468,21 @@ background-color: #ebebeb;
 .field-data input:focus {
 background-color: #ffffff;
 outline: 2px solid #e5e5e5;
+}
+
+/*Меняем цвет текста плейсхолдеров*/
+/*Chrome, Firefox, Opera, Safari 10.1+*/
+::placeholder { 
+color: #000000;
+opacity: 1; 
+}
+/*Internet Explorer 10-11*/
+:-ms-input-placeholder { 
+color: #000000;
+}
+/*Microsoft Edge*/
+::-ms-input-placeholder { 
+color: #000000;
 }
 
 .btn-calendar {
