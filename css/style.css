@@ -11,31 +11,6 @@ background-position: top center;
 text-transform: uppercase;
 }
 
-/*@font-face {
-font-weight: normal;
-font-style: normal;
-font-family: "symbols-sedona";
-src: url("../Sedona-fonts/Sedona-font.woff") format("woff"),
-url("../Sedona-fonts/Sedona-font.woff2") format("woff2"); 
-}
-
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-display: inline-block;
-width: 1em;
-margin-right: 0.2em;
-margin-left: 0.2em;
-font-weight: normal;
-line-height: 1em;
-font-family: "Sedona-font"; 
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak-as: none;
-}*/
-
 .container {
 width: 1200px;
 margin: 0 auto;  
@@ -102,13 +77,6 @@ top: 0;
 left: 50%;
 transform: translateX(-50%);
 }
-
-/*.main-menu h1 {
-margin-top: 37px;
-margin-left: 53px;
-margin-right: 53px;
-z-index: 2;
-}*/
   
 .main-menu a {
 display: inline-block;
@@ -134,7 +102,7 @@ color: #766357;
 background-color: #ffffff;
 }
 
- /* Главный заголовок на БГ*/
+/* Главный заголовок на background-image*/
 .sedona-title {
 width: 1200px;
 min-height: 215px;
@@ -275,19 +243,19 @@ flex-grow: 1;
 }
 
 .advantages-item:nth-child(1) {
-background-image: url(../img/svg-sedona/icon-1.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='72' viewBox='0 0 75 72'%3E%3Cg fill='%2381B3D2'%3E%3Cpath d='M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z'/%3E%3Cpath d='M72.771 39.253l2.076-2.068-9.908-9.865V0H51.127v13.567L37.5 0 .152 37.185l2.077 2.068 7.832-7.795v37.618H6.124V72h63.875v-2.924H64.94V31.458l7.831 7.795zM62.002 69.076H12.999V28.534L37.5 4.149l24.502 24.385v40.542zm0-44.682l-7.938-7.902V2.924h7.938v21.47z'/%3E%3Cpath d='M29.906 27.08c0 4.261 3.47 7.713 7.75 7.713 4.279 0 7.75-3.452 7.75-7.713 0-4.259-3.471-7.713-7.75-7.713-4.281 0-7.75 3.454-7.75 7.713zm7.75-4.945c2.744 0 4.969 2.214 4.969 4.945 0 2.732-2.225 4.948-4.969 4.948-2.746 0-4.97-2.216-4.97-4.948 0-2.731 2.225-4.945 4.97-4.945zM17.061 41.21h3v3.919h-3zM22.999 41.21h3v3.919h-3zM17.061 47.182h3v3.919h-3zM22.999 47.182h3v3.919h-3zM48.998 41.21h3v3.919h-3zM54.936 41.21h3v3.919h-3zM48.998 47.182h3v3.919h-3zM54.936 47.182h3v3.919h-3z'/%3E%3C/g%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50% 60px;
 }
 
 .advantages-item:nth-child(2) {
-background-image: url(../img/svg-sedona/icon-3.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='74' height='70' viewBox='0 0 74 70'%3E%3Cg fill='%2381B3D2'%3E%3Cpath d='M69.854 46.71H4.051c-2.274 0-4.135 1.94-4.135 4.313v3.504c0 2.372 1.861 4.313 4.135 4.313h.93v1.053c0 5.536 4.341 10.065 9.648 10.065h44.646c5.306 0 9.648-4.529 9.648-10.065V58.84h.93c2.274 0 4.135-1.941 4.135-4.313v-3.504c0-2.373-1.86-4.313-4.134-4.313zm-3.848 13.184c0 3.871-3.019 7.021-6.73 7.021H14.629c-3.711 0-6.731-3.15-6.731-7.021v-1.053h58.107v1.053zm5.065-5.367c0 .688-.558 1.271-1.218 1.271H4.051c-.66 0-1.217-.582-1.217-1.271v-3.504c0-.688.558-1.271 1.217-1.271h65.802c.66 0 1.218.582 1.218 1.271v3.504zM15.634 38.406l5.323 4.059 5.326-4.059 5.328 4.059 5.328-4.059 5.328 4.059 5.329-4.059 5.327 4.059 5.33-4.06 5.336 4.059 6.194-4.712-1.72-2.459-4.474 3.403-5.336-4.057-5.33 4.056-5.327-4.057-5.329 4.057-5.328-4.057-5.328 4.057-5.328-4.057-5.325 4.057-5.323-4.057-5.327 4.057-4.467-3.401-1.721 2.457 6.188 4.714zM7.978 31.544H68.855c.041-.619.069-1.241.069-1.87 0-.394-.016-.783-.032-1.173C68.227 12.657 54.186 0 36.952 0 19.719 0 5.677 12.657 5.013 28.501c-.017.39-.032.78-.032 1.173 0 .629.028 1.251.07 1.87h2.927zM36.952 3.043c15.591 0 28.35 11.316 29.021 25.458H7.931c.673-14.142 13.43-25.458 29.021-25.458z'/%3E%3Cellipse cx='36.952' cy='15.26' rx='1.945' ry='2.03'/%3E%3Cellipse cx='29.172' cy='10.23' rx='1.946' ry='2.03'/%3E%3Cellipse cx='44.732' cy='10.23' rx='1.946' ry='2.03'/%3E%3C/g%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50% 60px;
 }
 
 .advantages-item:nth-child(3) {
-background-image: url(../img/svg-sedona/icon-2.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='76' viewBox='0 0 64 76'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%2381B3D2' d='M61.097 22.501H36.312C50.125 15.602 51.229 11.25 50.72 8.816c-1.162-3.963-5.692-7.023-10.002-5.407-5.569 2.089-7.137 10.388-8.644 16.387-1.924-6.07-3.784-13.814-8.136-17.737C22.677.921 20.843-.205 18.175.031c-4.026.356-9.802 5.382-7.458 10.981 2.251 5.378 9.687 8.777 14.578 11.489H2.879A2.882 2.882 0 0 0 0 25.37v11.322a2.882 2.882 0 0 0 2.879 2.869h.274V76h57.841V39.561h.103a2.882 2.882 0 0 0 2.88-2.869V25.37a2.882 2.882 0 0 0-2.88-2.869zM42.413 5.944c2.103-.31 4.982 1.299 5.255 3.209.393 2.756-3.4 5.255-5.086 6.421-2.523 1.744-4.928 2.643-7.287 4.055.884-3.69 2.549-13.011 7.118-13.685zm-22.882 9.968c-2.225-1.485-6.544-4.431-6.44-7.771.112-3.595 5.743-6.57 8.814-3.886 3.856 3.371 5.713 11.105 7.119 16.557-3.249-1.539-6.328-2.788-9.493-4.9zm5.972 57.114H6.136V39.561h19.368v33.465zm0-36.502H3.046V25.538h22.457v10.986zm10.157 0v36.503h-7.174V25.538h7.174v10.986zm22.351 36.502H38.644V39.561h19.367v33.465zm2.92-36.502H38.644V25.538h22.287v10.986z'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50% 60px;
 }
@@ -345,11 +313,11 @@ flex-direction: column;
 }
 
 .interest span:first-child {
-padding-top: 50px;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 color: #000000;
+margin-top: 57px;
 }
 
 .interest p {
@@ -445,8 +413,11 @@ margin-right: 39px;
 }
   
 .field-data label {
-float: left;
-line-height: 38px;
+position: absolute;
+display: flex;
+justify-content: flex-start;
+width: 91px;
+margin-top: 7px;
 }
 
 .field-data input {
@@ -458,16 +429,17 @@ text-transform: uppercase;
 color: #000000;
 font-weight: bold;
 background-color: #f2f2f2;
-border: 0;   
+border: 2px solid #f2f2f2;   
 }
   
 .field-data input:hover {
 background-color: #ebebeb;
+border-color: #ebebeb;
 }
   
 .field-data input:focus {
 background-color: #ffffff;
-outline: 2px solid #e5e5e5;
+border-color: #e5e5e5;
 }
 
 /*Меняем цвет текста плейсхолдеров*/
@@ -502,23 +474,17 @@ border: 0;
 outline: 0;
 }
 
-.icon-calendar { 
-position: absolute;
-top: 7px;
-right: 9px;
-width: 21px;
-height: 22px;
-background: url(../img/svg-sedona/calendar.svg) no-repeat;
-border: none;
+.icon-calendar {
+fill: #cacaca;
 cursor: pointer;
 }
 
 .icon-calendar:hover {
-background: url(../img/svg-sedona/calendar-hover.svg) no-repeat;
+fill: #000000;
 }
 
 .icon-calendar:active {
-background: url(../img/svg-sedona/calendar-active.svg) no-repeat;
+fill: #81b3d2;
 }
   
 .btn-people-number {
@@ -574,15 +540,19 @@ line-height: 38px;
 .field-value-people {
 height: 40px;
 margin-left: 114px;
-text-align: left; 
+text-align: left;
 }
   
 .btn-plus {
+position: relative;
 margin-left: -4px;
+z-index: 2;
 }
   
 .btn-minus {
+position: relative;
 margin-right: -4px;
+z-index: 2;
 }
   
 .people-number-adults{
@@ -616,7 +586,9 @@ background-color: #669ec0;
 }
   
 .search-btn:focus {
-background-color: #669ec0;
+-webkit-box-shadow: 0 0 0 0.1em #e5e5e5;
+box-shadow: 0 0 0 0.1em #e5e5e5;
+border-radius: 0.1em;
 }
   
 .search-btn:active {
@@ -742,7 +714,7 @@ background-color: #81b3d2;
 
 
 .social-twitter {
-background-image: url(../img/svg-sedona/twitter.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17' height='15' viewBox='0 0 17 15'%3E%3Cpath fill='%23FFF' d='M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50%;
 }
@@ -755,33 +727,33 @@ background-color: #669ec0;
 
 .social-link:active .social-twitter {
 background-color: #5496bd;
-background-image: url(../img/svg-sedona/twitter.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17' height='15' viewBox='0 0 17 15'%3E%3Cpath fill='%23FFF' d='M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50%;
 }
 
 .social-fb {
-background-image: url(../img/svg-sedona/fb-icon.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='22' viewBox='0 0 12 22'%3E%3Cpath fill='%23FFF' d='M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50%;
 }
 
 .social-link:active .social-fb {
 background-color: #5496bd;
-background-image: url(../img/svg-sedona/fb-icon.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='22' viewBox='0 0 12 22'%3E%3Cpath fill='%23FFF' d='M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50%;
 }
 
 .social-youtube {
-background-image: url(../img/svg-sedona/youtube.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='16' viewBox='0 0 20 16'%3E%3Cpath fill='%23FFF' d='M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50%;
 }
 
 
 .social-link:active .social-youtube {
-background-image: url(../img/svg-sedona/youtube.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='16' viewBox='0 0 20 16'%3E%3Cpath fill='%23FFF' d='M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
 background-position: 50%;
 }
@@ -879,55 +851,61 @@ padding: 0;
 padding-bottom: 25px;
 }
 
+.checkbox-container1 label:first-of-type {
+padding-left: 40px;
+}
+
+/*Неотмеченный чекбокс*/
 .checkbox-container1 input[type="checkbox"] ~ .checkbox-indicator {
 position: absolute;
 top: 0;
 left: 0;
 width: 27px;
 height: 23px;
-background: url(../img/svg-sedona/checkbox-off.svg) no-repeat center top;
+background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E")  no-repeat center top;
 }
 
-.checkbox-container1 label:first-of-type {
-padding-left: 40px;
-}
-
-.checkbox-container1 input[type="checkbox"]:focus ~ .checkbox-indicator {
-border-color: #663d15;
-outline: thin dotted;
-outline: 5px auto -webkit-focus-ring-color;
-}
-
-.checkbox-container1 input[type="checkbox"]:checked ~ .checkbox-indicator::before {
+/*Отмеченный чекбокс*/
+.checkbox-container1 input[type="checkbox"]:checked ~ .checkbox-indicator {
 content: "";
 position: absolute;
 top: 0;
 left: 0;
 width: 27px;
 height: 23px;
-background-image: url(../img/svg-sedona/checkbox-on.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
 }
 
-.checkbox-container1 input[type="checkbox"]:disabled ~ .checkbox-indicator::before {
+/*Фокус*/
+.checkbox-container1 input[type="checkbox"]:focus ~ .checkbox-indicator {
+-webkit-box-shadow: 0 0 0 0.2em #766357;
+box-shadow: 0 0 0 0.2em #766357;
+border-radius: 0.2em;
+}
+
+/*Неотмеченный и disabled чекбокс*/
+.checkbox-container1 input[type="checkbox"]:disabled ~ .checkbox-indicator {
 content: "";
 position: absolute;
 top: 0;
 left: 0;
 width: 23px;
 height: 23px;
-background-image: url(../img/svg-sedona/checkbox-off-disabled.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%236a6a6a' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E");
 }
 
-.checkbox-container1 input[type="checkbox"]:disabled:checked ~ .checkbox-indicator::before {
+/*Отмеченный и disabled чекбокс*/
+.checkbox-container1 input[type="checkbox"]:disabled:checked ~ .checkbox-indicator {
 content: "";
 position: absolute;
 top: 0;
 left: 2px;
 width: 27px;
 height: 23px;
-background-image: url(../img/svg-sedona/checkbox-on-disabled.svg), url(../img/svg-sedona/checkbox-off-disabled.svg);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%236a6a6a' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%236a6a6a' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
 background-repeat: no-repeat;
 }
+
 
 .type-of-house {
 display: -webkit-box;
@@ -940,7 +918,7 @@ width: 200px;
 flex-direction: column;
 }
 
-/* Боковой фильтр */
+/*Боковой фильтр*/
 .filter-range {
 width: 320px;
 margin-left: 280px;
@@ -1068,7 +1046,6 @@ background: #ffffff;
 }
 
 /*Рейтинг*/
-
 .sort-of {
 display: -webkit-box;
 display: -ms-flexbox;
@@ -1181,7 +1158,6 @@ fill: #81b3d2;
 }
 
 /* Результаты поиска */
-
 .result {
 display: -webkit-box;
 display: -ms-flexbox;
