@@ -518,13 +518,13 @@ box-sizing: border-box;
 padding-left: 8px;
 text-transform: uppercase;
 color: #000000;
-font-family: "PTSans";
+font-family: "PTSans-Bold";
 font-size: 14px;
-font-weight: bold;
 line-height: 26px;
 text-align: left;
 background-color: #f2f2f2;
-border: 2px solid #f2f2f2;   
+border: 2px solid #f2f2f2;  
+outline: none; 
 }
   
 .field-data input:hover {
@@ -554,19 +554,22 @@ color: #000000;
 
 .btn-calendar {
 position: absolute;
+display: block;
+top: 0;
 right: -38px;
-width: 38px;
+width: 39px;
 height: 40px;
-padding: 0;
-font-size: 21px;
-line-height: 26px;
-text-transform: uppercase;
-vertical-align: top;
-color: #c2c2c2;
 background-color: #f2f2f2;
+padding: 0;
+border: none;
+outline: none;
 cursor: pointer;
-border: 0;
-outline: 0;
+}
+
+.btn-calendar:focus {
+background-color: #f2f2f2;
+-webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
+box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
 .icon-calendar {
@@ -600,7 +603,7 @@ cursor: pointer;
 color: #000000;
 }
   
-btn-people-number:focus {
+.btn-people-number:focus {
 color: #000000;
 }
   
@@ -643,7 +646,7 @@ line-height: 38px;
 height: 40px;
 margin-left: 114px;
 text-align: left;
-font-family: "PTSans-Bold";
+font-family: "PTSans-Bold","Arial", sans-serif;
 letter-spacing: normal;
 font-size: 14px;
 line-height: 26px;
@@ -655,11 +658,23 @@ position: relative;
 margin-left: -4px;
 z-index: 2;
 }
+
+.btn-plus:focus {
+background-color: #f2f2f2;
+-webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
+box-shadow: inset 0 0 0 2px #e5e5e5;
+}
   
 .btn-minus {
 position: relative;
 margin-right: -4px;
 z-index: 2;
+}
+
+.btn-minus:focus {
+background-color: #f2f2f2;
+-webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
+box-shadow: inset 0 0 0 2px #e5e5e5;
 }
   
 .people-number-adults{
@@ -674,7 +689,6 @@ float: right;
 display: inline-block;
 margin-left: 30px;
 font-family: "PTSans-Bold";
-letter-spacing: normal;
 font-size: 14px;
 line-height: 26px;
 color: #000000;
