@@ -421,7 +421,6 @@ margin-right: auto;
 margin-left: auto;
 text-decoration: none;
 font-family: "PTSans-Bold";
-font-weight: 700;
 font-size: 21px;
 line-height: 26px;
 color: #ffffff;
@@ -461,8 +460,6 @@ padding-top: 56px;
 padding-bottom: 55px;
 padding-left: 57px;
 padding-right: 54px;
-font-weight: bold;
-line-height: 26px; 
 background-color: #ffffff;
 box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.2); 
 }
@@ -507,8 +504,13 @@ margin-right: 39px;
 position: absolute;
 display: flex;
 justify-content: flex-start;
-width: 91px;
-margin-top: 7px;
+min-width: 91px;
+margin-top: 9px;
+padding-left: 0px;
+font-family: "PTSans-Bold";
+font-size: 14px;
+line-height: 20px;
+
 }
 
 .field-data input {
@@ -639,18 +641,19 @@ margin-bottom: 54px;
   
 .field-people > label {
 float: left;
-line-height: 38px;
+margin-top: 7px;
+margin-left: 0px;
+font-family: "PTSans-Bold";
+font-size: 14px;
+line-height: 26px;
+color: #000000;
 }
   
 .field-value-people {
 height: 40px;
 margin-left: 114px;
 text-align: left;
-font-family: "PTSans-Bold","Arial", sans-serif;
-letter-spacing: normal;
-font-size: 14px;
-line-height: 26px;
-color: #000000;
+
 }
   
 .btn-plus {
@@ -683,6 +686,10 @@ float: left;
   
 .children-number {
 float: right;
+font-family: "PTSans-Bold";
+font-size: 14px;
+line-height: 26px;
+color: #000000;
 }
   
 .people-number-children {
