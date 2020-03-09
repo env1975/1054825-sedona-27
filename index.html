@@ -2,10 +2,10 @@
 <html lang="ru">
   
 <head>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" 
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" 
   rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet"><!--Подключить минимизацию-->
-  <link rel="stylesheet" href="css/style.css"><!--Подключить минимизацию-->
+  <link href="css/min.normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/min.style.css">
   
   <meta charset="utf-8">  
   <meta name="viewport" content="width=device-width, user-scalable=yes">
@@ -16,13 +16,12 @@
 </head>
 
   <body>
-    <h1 class="visually-hidden">Сайт города Седона</h1><!--Заголовок для поисковиков. На странице его нет.-->
+    <h1 class="visually-hidden">Сайт города Седона</h1>
     <div class="container">
       <header class="main-header">
-        <h2 class="visually-hidden">Навигация по сайту</h2><!--Заголовок для поисковиков. На странице его нет.-->
+        <h2 class="visually-hidden">Навигация по сайту</h2>
         <nav class="main-navigation">
           <a class="main-logo">
-            <h2 class="visually-hidden">Логотип сайта</h2><!--Заголовок для поисковиков. На странице его нет.-->
             <img src="img/svg-sedona/header-logo.svg" width="140" height="71" alt="Sedona's Logo">
           </a>
           <ul class="main-menu">
@@ -42,14 +41,13 @@
         </nav>
       </header>  
      <main class="container">
-      <h2 class="visually-hidden">Почему Седона?</h2><!--Заголовок для поисковиков. На странице его нет.-->
+      <h2 class="visually-hidden">Почему Седона?</h2>
       <section class="logo-sedona">
-        <h2 class="visually-hidden">Приглашаем в Седону</h2><!--Заголовок для поисковиков. На странице его нет.-->         
+                 
         <img src="img/jpg-sedona/sedona-bg.jpg" alt="Sedona's intro" width="1200" height="509">
       </section>
         <div class="sedona-title">
           <section class="sedona-description">
-            <h2 class="visually-hidden">Описание города Седона</h2><!--Заголовок для поисковиков. На странице его нет.-->
             <p class="slogan">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
             <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </section>
@@ -62,7 +60,6 @@
               там течет своя жизнь</p>
           </div>
           <div class="advice-image">
-            <h2 class="visually-hidden">Ратуша Седоны</h2><!--Заголовок для поисковиков. На странице его нет.-->
             <img src="img/jpg-sedona/sedona_town.jpg" alt="Sedona Town" width="800" height="256">
           </div>
         </section>
@@ -94,7 +91,6 @@
               вы осмелитесь</p>
           </div>
           <div class="advice-image">
-            <h2 class="visually-hidden">Мост Дьявола в Седоне</h2><!--Заголовок для поисковиков. На странице его нет.-->
             <img src="img/jpg-sedona/devil_brige.jpg" alt="Devil's Bridge" width="801" height="256">
           </div>
         </section>
@@ -117,11 +113,11 @@
           </div>
         </section>
         <section class="interest">
-          <h2 class="visually-hidden">Бронирование поездки в Седону</h2><!--Заголовок для поисковиков. На странице его нет.-->
           <span>Заинтересовались?</span>
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
             <div class="search">
+              <h2 class="visually-hidden">Бронирование поездки в Седону</h2>
               <a class="search-hotels" href="form.html">Поиск гостиницы в Седоне</a>
               <div class="search-filters">
                 <form name="calendar" action="#" method="get">
@@ -197,7 +193,7 @@
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A602d5bc3656915fab3b067fb5adbf13e62451af9430ce0217b1759b146cb3a02&amp;source=constructor" width="1200" height="593"></iframe>
     </div>
     </main>
-<!--Футер. Идентичен на всех страницах-->
+
     <footer class="footer-align">
       <div class="main-footer footer-opacity footer-shadow">
         <div class="footer-visit-sedona"><a href="#">#visitsedona<br>
@@ -265,8 +261,8 @@
       </div>
      </footer>
     </div>
-    <script src="js/script.js"></script> <!--Скрипт для работы кнопок "-" и "+" в модальном окне. Сделать минимизацию-->
-    <script src="js/script1.js"></script> <!--Скрипт для выпадающего модального окна. Сделать минимизацию-->
+    <script src="js/script.js"></script> 
+    <script src="js/min.script1.js"></script> 
   </body>
 </html>
 
